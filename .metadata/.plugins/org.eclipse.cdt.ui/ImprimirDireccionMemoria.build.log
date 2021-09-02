@@ -1,0 +1,11 @@
+21:30:43 **** Incremental Build of configuration Debug for project ImprimirDireccionMemoria ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ImprimirDireccionMemoria.o" "..\\src\\ImprimirDireccionMemoria.c" 
+..\src\ImprimirDireccionMemoria.c: In function 'main':
+..\src\ImprimirDireccionMemoria.c:9:8: warning: unused variable 'altura' [-Wunused-variable]
+  float altura=1.88;
+        ^~~~~~
+gcc -o ImprimirDireccionMemoria.exe "src\\ImprimirDireccionMemoria.o" 
+
+21:30:43 Build Finished. 0 errors, 1 warnings. (took 285ms)
+

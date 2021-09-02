@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "math.h"
+
+int math_suma (float* numero1, float* numero2,float* resultado)
+{
+	int retorno = -1;
+	float bufferSuma;
+	if(numero1 != NULL && numero2 != NULL && resultado !=NULL)
+	{
+		retorno = 0;
+		bufferSuma = *numero1 + *numero2;
+	}
+	*resultado = bufferSuma;
+
+	return retorno;
+}
+int math_resta (float* numero1, float* numero2,float* resultado)
+{
+	int retorno = -1;
+	float bufferResta;
+	if(numero1 != NULL && numero2 != NULL && resultado !=NULL)
+	{
+		retorno = 0;
+		bufferResta = *numero1 - *numero2;
+	}
+	*resultado = bufferResta;
+
+	return retorno;
+}
+int math_division (float* numero1, float* numero2,float* resultado)
+{
+	int retorno = -1;
+	float bufferDivision = 0;
+	if(numero1 != NULL && numero2 != NULL && resultado !=NULL && numero2 !=0)
+	{
+		retorno = -2;
+	}
+	if (numero2 != 0)
+	{
+		retorno = 0;
+		bufferDivision = *numero1 / *numero2;
+		*resultado = bufferDivision;
+	}
+
+
+	return retorno;
+}
+int math_multiplicacion (float* numero1, float* numero2,float* resultado)
+{
+	int retorno = -1;
+	float bufferMultiplicacion;
+	if(numero1 != NULL && numero2 != NULL && resultado !=NULL)
+	{
+		retorno = 0;
+		bufferMultiplicacion = *numero1 * *numero2;
+	}
+	*resultado = bufferMultiplicacion;
+
+	return retorno;
+}
+int math_factorial (float* numero, float * resultado)
+{
+	int retorno = -1;
+	float bufferFactorial ;
+
+	if (numero != NULL && resultado !=NULL)
+	{
+		retorno = -2;
+		bufferFactorial = *numero;
+		while(bufferFactorial>*numero)
+		{
+			retorno = 0;
+			*resultado *= bufferFactorial;
+			bufferFactorial--;
+		}
+	}
+	return retorno;
+}

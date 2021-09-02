@@ -1,0 +1,18 @@
+/*
+Tobias Moretti
+Ingresar 10 números enteros, distintos de cero. Mostrar:
+a.Cantidad de pares e impares.
+b.El menor número ingresado.
+c.De los pares el mayor número ingresado.
+d.Suma de los positivos.
+e.Producto de los negativos.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	return 0;
+}

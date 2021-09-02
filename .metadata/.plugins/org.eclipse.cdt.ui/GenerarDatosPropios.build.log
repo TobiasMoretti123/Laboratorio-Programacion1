@@ -1,0 +1,9 @@
+21:33:08 **** Incremental Build of configuration Debug for project GenerarDatosPropios ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GenerarDatosPropios.o" "..\\src\\GenerarDatosPropios.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.c" 
+gcc -o GenerarDatosPropios.exe "src\\GenerarDatosPropios.o" "src\\Persona.o" "src\\utn.o" 
+
+21:33:08 Build Finished. 0 errors, 0 warnings. (took 730ms)
+
