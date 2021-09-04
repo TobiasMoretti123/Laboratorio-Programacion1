@@ -17,7 +17,7 @@ int main(void)
 
 	printf("El entero ingresado es: %d",numeroIngresado);
 }
-int PedirUnEntero (char mensaje[],)
+int PedirUnEntero (char mensaje[])
 {
 	int numeroIngresado;
 
