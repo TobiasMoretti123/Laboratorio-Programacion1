@@ -1,16 +1,14 @@
-Info: Nothing to build for SABADO 2-2
-Info: Nothing to build for SABADO 2-2
-12:20:20 **** Incremental Build of configuration Debug for project SABADO 2-2 ****
+14:28:09 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SABADO 2-2.o" "..\\src\\SABADO 2-2.c" 
-gcc -o "SABADO 2-2.exe" "src\\SABADO 2-2.o" 
-Info: Nothing to build for SABADO 2-2
-12:23:06 **** Incremental Build of configuration Debug for project SABADO 2-2 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
+gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 
+Info: Nothing to build for Ejercicio 001 Clase 4
+Info: Nothing to build for Ejercicio 001 Clase 4
+14:29:44 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SABADO 2-2.o" "..\\src\\SABADO 2-2.c" 
-..\src\SABADO 2-2.c: In function 'main':
-..\src\SABADO 2-2.c:54:2: warning: 'suma' is used uninitialized in this function [-Wuninitialized]
-  printf("El menor numero negativo es: %d y la suma de sus antecesores es: %d",elMenorNumero,suma);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o "SABADO 2-2.exe" "src\\SABADO 2-2.o" 
-Info: Nothing to build for SABADO 2-2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
+gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 
+14:30:22 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
+gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 

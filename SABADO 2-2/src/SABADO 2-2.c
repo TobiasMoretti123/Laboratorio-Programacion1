@@ -40,13 +40,13 @@ int main(void) {
 				if(i==1)
 				{
 					elMenorNumero = numeroIngresado;
+					suma = SumaAntecesores(numeroIngresado, i);
 				}
 			}
 		}
 		if(elMenorNumero>numeroIngresado)
 		{
 			elMenorNumero = numeroIngresado;
-			SumaAntecesores(numeroIngresado, i);
 		}
 	}
 	printf("El promedio de los positivos es: %.2f\n",promedio);
