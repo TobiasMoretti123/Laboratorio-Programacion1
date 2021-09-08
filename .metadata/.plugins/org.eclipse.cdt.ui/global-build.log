@@ -1,14 +1,5 @@
-14:28:09 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
+19:56:23 **** Incremental Build of configuration Debug for project VECTORES ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
-gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 
-Info: Nothing to build for Ejercicio 001 Clase 4
-Info: Nothing to build for Ejercicio 001 Clase 4
-14:29:44 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
-gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 
-14:30:22 **** Incremental Build of configuration Debug for project Ejercicio 001 Clase 4 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 001 Clase 4.o" "..\\src\\Ejercicio 001 Clase 4.c" 
-gcc -o "Ejercicio 001 Clase 4.exe" "src\\Ejercicio 001 Clase 4.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\VECTORES.o" "..\\src\\VECTORES.c" 
+gcc -o VECTORES.exe "src\\VECTORES.o" 
+Info: Nothing to build for VECTORES

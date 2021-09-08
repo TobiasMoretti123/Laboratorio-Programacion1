@@ -7,41 +7,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "menu.h"
 
-void MenuDeJuego(char mensaje[], char mensajePista1[], char mensajePista2[],
-		char mensajePuntuacion[]);
 int main(void) {
 	setbuf(stdout, NULL);
 	MenuDeJuego(
 			"Adivine el numero entre 0 y 100 o escriba un negativo para salir: ",
-			"Esta por encima del numero: ", "Esta por debajo del numero: ",
-			" Su puntuacion es: ");
+			"Esta por encima del numero por diferecia de",
+			"Esta por debajo del numero por diferencia de",
+			"Su puntuacion es:");
 	return 0;
 }
-void MenuDeJuego(char mensaje[], char mensajePista1[], char mensajePista2[],
-		char mensajePuntuacion[]) {
-	int numero;
-	int puntuacion;
-	printf("%s", mensaje);
-	scanf("%d", &numero);
-	puntuacion = 10;
-	do {
-		if (numero > 37 && numero <= 100) {
-			printf("%s", mensajePista1);
-			scanf("%d", &numero);
-			puntuacion--;
-		} else {
-			if (numero < 37 && numero >= 0) {
-				printf("%s", mensajePista2);
-				scanf("%d", &numero);
-				puntuacion--;
-			} else {
-				if (numero == 37) {
-					printf("Ganaste el juego!!!");
-					break;
-				}
-			}
-		}
-	} while (numero > 0);
-	printf("%s %d/100", mensajePuntuacion, puntuacion);
-}
+
