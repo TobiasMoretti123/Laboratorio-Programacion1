@@ -3,33 +3,47 @@
 #define T 5
 
 void CargarVector(int vector[], int tam);
+int BuscarMaximo(int vector[], int tam);
+void MostrarIndicesDelValor(int vector[], int tam, int valor);
+void MostrarVector(int vector[], int tam);
 int main(void) {
 	setbuf(stdout, NULL);
-	int listaNumeros[T];
-	int i;
-	int acumulador;
+	int listaNumeros[T]={};
 	int maximo;
-	acumulador = 0;
+	int valorIngresado = 6;
 
-	CargarVector(listaNumeros,T);
-	for (i = 0; i < T; i++) {
-		acumulador = acumulador + listaNumeros[i];
-	}
-	printf("El total acumulado es: %d\n", acumulador);
-	for (i = 0; i < T; i++) {
-		if (listaNumeros[i] > maximo || i == 0) {
-			maximo = listaNumeros[i];
-		}
-	}
-	printf("El numero maximo es: %d\n", maximo);
-	for (i = 0; i < T; i++) {
-		printf("Valor %d: %d\n", i, listaNumeros[i]);
-	}
+	//CargarVector(listaNumeros, T);
+	maximo = BuscarMaximo(listaNumeros, T);
+	printf("El numero maximo es: %d\nPosiciones del maximo\n", maximo);
+	MostrarIndicesDelValor(listaNumeros, T, maximo);
+	MostrarVector(listaNumeros, T);
+	MostrarIndicesDelValor(listaNumeros, T, valorIngresado);
 	return 0;
 }
-void CargarVector(int vector[], int tam) { // param por referencia
+void CargarVector(int vector[], int tam) {
 	for (int i = 0; i < tam; i++) {
 		printf("Ingrese un numero: ");
 		scanf("%d", &vector[i]);
+	}
+}
+int BuscarMaximo(int vector[], int tam) {
+	int maximo;
+	for (int i = 0; i < tam; i++) {
+		if (vector[i] > maximo || i == 0) {
+			maximo = vector[i];
+		}
+	}
+	return maximo;
+}
+void MostrarIndicesDelValor(int vector[], int tam, int valor) {
+	for (int i = 0; i < tam; i++) {
+		if (vector[i] == valor) {
+			printf("%d\n", i);
+		}
+	}
+}
+void MostrarVector(int vector[], int tam) {
+	for (int i = 0; i < tam; i++) {
+		printf("Valor %d: %d\n", i, vector[i]);
 	}
 }

@@ -1,5 +1,5 @@
-19:56:23 **** Incremental Build of configuration Debug for project VECTORES ****
+15:45:07 **** Incremental Build of configuration Debug for project Ejercicio 5-2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\VECTORES.o" "..\\src\\VECTORES.c" 
-gcc -o VECTORES.exe "src\\VECTORES.o" 
-Info: Nothing to build for VECTORES
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\verificacion.o" "..\\src\\verificacion.c" 
+gcc -o "Ejercicio 5-2.exe" "src\\Ejercicio 5-2.o" "src\\ingreso.o" "src\\vectores.o" "src\\verificacion.o" 
+Info: Nothing to build for Ejercicio 5-2
