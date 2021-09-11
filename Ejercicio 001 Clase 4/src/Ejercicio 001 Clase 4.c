@@ -8,14 +8,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "menu.h"
+#define NUMERO 70
 
 int main(void) {
 	setbuf(stdout, NULL);
 	MenuDeJuego(
 			"Adivine el numero entre 0 y 100 o escriba un negativo para salir: ",
-			"Esta por encima del numero por diferecia de",
-			"Esta por debajo del numero por diferencia de",
-			"Su puntuacion es:");
+			"Lo ingresado esta por debajo del numero por diferecia de",
+			"Lo ingresado esta por arriba del numero por diferencia de",
+			"Su puntuacion es:",NUMERO);
 	return 0;
 }
 

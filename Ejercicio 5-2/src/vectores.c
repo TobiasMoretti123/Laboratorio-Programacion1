@@ -1,6 +1,4 @@
 #include "vectores.h"
-#include "verificacion.h"
-#include "ingreso.h"
 void ListarVectorEnteros(int array[], int sice) {
 	for (int i = 0; i < sice; i++) {
 		printf("d)listado enteros: %d\n", array[i]);
@@ -46,9 +44,12 @@ void MostrarCantidadPostivosNegativos(int array[], int sice) {
 }
 int BuscarMayorImpar(int array[], int sice) {
 	int mayorImpar;
+	int contadorImpar;
+	contadorImpar = 0;
 	for (int i = 0; i < sice; i++) {
 		if (VerificarParidad(array[i]) == 0) {
-			if (mayorImpar < array[i] || i == 0) {
+			contadorImpar++;
+			if (mayorImpar < array[i] || contadorImpar == 1) {
 				mayorImpar = array[i];
 			}
 		}

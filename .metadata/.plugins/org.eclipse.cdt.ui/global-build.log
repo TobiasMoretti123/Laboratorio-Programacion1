@@ -1,5 +1,4 @@
-15:45:07 **** Incremental Build of configuration Debug for project Ejercicio 5-2 ****
+14:16:21 **** Incremental Build of configuration Debug for project BIBLIOTECAS ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\verificacion.o" "..\\src\\verificacion.c" 
-gcc -o "Ejercicio 5-2.exe" "src\\Ejercicio 5-2.o" "src\\ingreso.o" "src\\vectores.o" "src\\verificacion.o" 
-Info: Nothing to build for Ejercicio 5-2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o BIBLIOTECAS.exe "src\\BIBLIOTECAS.o" "src\\utn.o" 

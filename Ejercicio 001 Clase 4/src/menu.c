@@ -1,6 +1,6 @@
 #include "menu.h"
 void MenuDeJuego(char mensaje[], char mensajePista1[], char mensajePista2[],
-		char mensajePuntuacion[]) {
+		char mensajePuntuacion[],int respuesta) {
 	int numero;
 	int puntuacion;
 	int resta;
@@ -8,17 +8,17 @@ void MenuDeJuego(char mensaje[], char mensajePista1[], char mensajePista2[],
 	do {
 		printf("%s", mensaje);
 		scanf("%d", &numero);
-		if (numero > NUMERO && numero <= 100) {
-			resta = numero - NUMERO;
+		if (numero > respuesta && numero <= 100) {
+			resta = numero - respuesta;
 			printf("%s %d\n", mensajePista1, resta);
 			puntuacion++;
 		} else {
-			if (numero < NUMERO && numero >= 0) {
-				resta = NUMERO - numero;
+			if (numero < respuesta && numero > 0) {
+				resta = respuesta - numero;
 				printf("%s %d\n", mensajePista2, resta);
 				puntuacion++;
 			} else {
-				if (numero == NUMERO) {
+				if (numero == respuesta) {
 					printf("Ganaste el juego!!! ");
 					puntuacion = 10;
 					break;
