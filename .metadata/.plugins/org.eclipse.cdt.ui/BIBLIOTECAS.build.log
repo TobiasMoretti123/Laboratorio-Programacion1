@@ -1,7 +1,7 @@
-14:16:21 **** Incremental Build of configuration Debug for project BIBLIOTECAS ****
+14:32:27 **** Incremental Build of configuration Debug for project BIBLIOTECAS ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -o BIBLIOTECAS.exe "src\\BIBLIOTECAS.o" "src\\utn.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\vectores.o" "..\\src\\vectores.c" 
+gcc -o BIBLIOTECAS.exe "src\\BIBLIOTECAS.o" "src\\utn.o" "src\\vectores.o" "src\\verificacion.o" 
 
-14:16:21 Build Finished. 0 errors, 0 warnings. (took 424ms)
+14:32:27 Build Finished. 0 errors, 0 warnings. (took 417ms)
 
