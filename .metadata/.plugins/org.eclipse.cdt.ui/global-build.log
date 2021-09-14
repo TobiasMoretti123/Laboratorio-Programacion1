@@ -1,9 +1,5 @@
-16:22:58 **** Incremental Build of configuration Debug for project Ejercicio 5-3 ****
+16:39:46 **** Rebuild of configuration Debug for project TP_[1] ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 5-3.o" "..\\src\\Ejercicio 5-3.c" 
-gcc -o "Ejercicio 5-3.exe" "src\\Ejercicio 5-3.o" "src\\utn.o" "src\\vectores.o" "src\\verificacion.o" 
-Info: Nothing to build for Ejercicio 5-3
-16:29:35 **** Incremental Build of configuration Debug for project Ejercicio 5-3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 5-3.o" "..\\src\\Ejercicio 5-3.c" 
-gcc -o "Ejercicio 5-3.exe" "src\\Ejercicio 5-3.o" "src\\utn.o" "src\\vectores.o" "src\\verificacion.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -o TP_[1].exe "src\\TP_[1].o" 
+Info: Nothing to build for TP_[1]
