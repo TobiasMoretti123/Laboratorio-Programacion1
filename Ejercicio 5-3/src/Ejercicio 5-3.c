@@ -17,7 +17,7 @@
 
 int PromedioPositivos(int vector[], int tam, float *promedio, int valorInicial);
 int BuscarMenorNegativo(int array[], int sice, int *minimo, int valorIncial);
-int SumaAntecesores(int array[], int sice, int *minimo, int valorIncial);
+void SumaAntecesores(int *numero, int *resultado);
 int main(void) {
 	setbuf(stdout, NULL);
 	int listaNumeros[T] = { 0 };
@@ -39,7 +39,7 @@ int main(void) {
 	}
 	if (respuestaNegativos == 1) {
 		printf("El menor de los negativos es: %d\n", menorNegativo);
-		sumaAntecesores = SumaAntecesores(listaNumeros, T, &menorNegativo, 0);
+		SumaAntecesores(&menorNegativo, &sumaAntecesores);
 		printf("La suma de los antecesores hasta 0 es: %d\n", sumaAntecesores);
 	} else {
 		printf("No se ingreso numero negativo\n");
@@ -83,17 +83,13 @@ int BuscarMenorNegativo(int array[], int sice, int *minimo, int valorInicial) {
 	*minimo = menorNegativo;
 	return banderaNegativa;
 }
-int SumaAntecesores(int array[], int sice, int *minimo, int valorIncial) {
-	int retorno;
-	int respuesta;
-	int suma;
-	respuesta = BuscarMenorNegativo(array, sice, minimo, valorIncial);
-	if (respuesta == 1) {
-		for (int i = *minimo; i < 0; i++) {
-			suma = *minimo + (*minimo + 1);
-		}
+void SumaAntecesores(int *numero, int *resultado) {
+	int antecesor;
+	*resultado = 0;
+	antecesor = *numero;
+	while (antecesor <= 0) {
+		*resultado += antecesor;
+		antecesor++;
 	}
-	retorno = suma;
-	return retorno;
 }
 
