@@ -8,6 +8,7 @@
 int SumarValores(int *numero1, int *numero2, int *resultado) {
 	int retorno;
 	retorno = 1;
+
 	*resultado = *numero1 + *numero2;
 
 	return retorno;

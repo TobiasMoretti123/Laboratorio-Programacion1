@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "vectores.h"
 #ifndef INGRESO_H_
 #define INGRESO_H_
 
