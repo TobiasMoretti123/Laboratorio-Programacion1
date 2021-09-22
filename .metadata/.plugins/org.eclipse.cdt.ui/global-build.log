@@ -1,7 +1,5 @@
-16:06:22 **** Incremental Build of configuration Debug for project Ejercicio 7-1 ****
+19:48:08 **** Incremental Build of configuration Debug for project Ejercicio 8-2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validaciones.o" "..\\src\\validaciones.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 7-1.o" "..\\src\\Ejercicio 7-1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\productos.o" "..\\src\\productos.c" 
-gcc -o "Ejercicio 7-1.exe" "src\\Ejercicio 7-1.o" "src\\listados.o" "src\\ordenamiento.o" "src\\productos.o" "src\\utn.o" "src\\validaciones.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 8-2.o" "..\\src\\Ejercicio 8-2.c" 
+gcc -o "Ejercicio 8-2.exe" "src\\Ejercicio 8-2.o" "src\\utn.o" "src\\validaciones.o" 
+Info: Nothing to build for Ejercicio 8-2
