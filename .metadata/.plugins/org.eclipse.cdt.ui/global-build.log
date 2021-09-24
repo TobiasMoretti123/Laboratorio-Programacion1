@@ -1,5 +1,6 @@
-19:48:08 **** Incremental Build of configuration Debug for project Ejercicio 8-2 ****
+21:02:51 **** Incremental Build of configuration Debug for project Ejercicio 8-2 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\proyecto.o" "..\\src\\proyecto.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 8-2.o" "..\\src\\Ejercicio 8-2.c" 
-gcc -o "Ejercicio 8-2.exe" "src\\Ejercicio 8-2.o" "src\\utn.o" "src\\validaciones.o" 
+gcc -o "Ejercicio 8-2.exe" "src\\Ejercicio 8-2.o" "src\\proyecto.o" "src\\utn.o" "src\\validaciones.o" 
 Info: Nothing to build for Ejercicio 8-2

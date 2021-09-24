@@ -1,1 +1,8 @@
-Info: Nothing to build for BURBUJEO
+20:56:52 **** Rebuild of configuration Debug for project BURBUJEO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BURBUJEO.o" "..\\src\\BURBUJEO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ordenamiento.o" "..\\src\\ordenamiento.c" 
+gcc -o BURBUJEO.exe "src\\BURBUJEO.o" "src\\ordenamiento.o" 
+
+20:56:53 Build Finished. 0 errors, 0 warnings. (took 743ms)
+
