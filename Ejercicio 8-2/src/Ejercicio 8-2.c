@@ -13,6 +13,17 @@
  4)LISTADO Productos.
  5)LISTADO ordenado por precio.
  6)LISTADO ordenado por descripción.
+ 7)LISTADO IPHONE de EEUU
+
+ Biblioteca de informes:
+ Agregar los siguientes informes:
+ El/los  productos más caros.
+ Los productos que cuestan 700
+ Precio promedio por tipo de producto.
+ De los Iphone el más barato
+ Los productos "MADE IN CHINA"
+ Las MAC que cuestan más de 700 USD
+ El/Los Accesorios más caros
  */
 
 #include <stdio.h>
@@ -22,16 +33,15 @@
 #include "utn.h"
 #include "validaciones.h"
 #include "proyecto.h"
-#define TAM 2
 
 int main(void) {
 	setbuf(stdout, NULL);
 	eProducto listaProductos[TAM];
-
 	InicialilarListaProducto(listaProductos, TAM);
 	MenuDeOpciones(listaProductos, TAM,
-			"1.Alta\n2.Baja\n3.Modificar\n4.Listado Productos\n5.Listado Ordenado por ID\n6.Listado Ordenado por precio\n7.Salir\n");
-
+			"1.Alta\n2.Baja\n3.Modificar\n4.Listado Productos\n5.Ordenar lista por precio\n6.Ordenar lista por descripcion\n7.Lista Iphone\n8.Informar\n9.Salir\n",
+			9);
 	return 0;
 }
+
 

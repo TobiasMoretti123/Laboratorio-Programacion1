@@ -1,36 +1,22 @@
 /*
- ============================================================================
- Name        : Ejercicio.c
- Author      : Tobias
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Tobias Moretti
+ Ejercicio 8-1:
+ Crear la estructura Jugador (nombre, goles metidos, partidos jugados, promedio de goles).
+ Crear una función que permita cargar los datos de un jugador y otra que los muestre.
+ Una tercera función calculará el promedio de goles.
  */
 
 #include <stdio.h>
 #include <stdlib.h>
-#define TAM 5
-
-typedef struct {
-	int idProducto;
-	char descripcion[100];
-	int nacionalidad;
-	int tipo;
-	float precio;
-} eProducto;
-
-void MostrarProducto(eProducto unProducto);
+#include "utn.h"
+#include "validaciones.h"
+#include "jugador.h"
 int main(void) {
 	setbuf(stdout, NULL);
-	eProducto miProducto = { 1000, "Iphone 12", 1, 1, 1000 };
-	eProducto listaProductos[TAM];
-
-	MostrarProducto(miProducto);
-
+	eJugador unJugador;
+	unJugador = CargarJugador("Ingrese un jugador\n");
+	MostrarJugador(unJugador);
 	return 0;
 }
-void MostrarProducto(eProducto unProducto) {
-	printf("%d %s %d %d %.2f\n", unProducto.idProducto, unProducto.descripcion,
-			unProducto.nacionalidad, unProducto.tipo, unProducto.precio);
-}
+
+

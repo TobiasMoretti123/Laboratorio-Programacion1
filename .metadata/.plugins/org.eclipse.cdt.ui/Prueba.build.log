@@ -1,1 +1,7 @@
-Info: Nothing to build for PRUEBA
+20:23:24 **** Rebuild of configuration Debug for project Prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prueba.o" "..\\src\\Prueba.c" 
+gcc -o Prueba.exe "src\\Prueba.o" 
+
+20:23:24 Build Finished. 0 errors, 0 warnings. (took 306ms)
+
